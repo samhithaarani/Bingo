@@ -13,8 +13,17 @@
 <body>
   <nav class="navbar navbar-light" style="background-color: #e3a8f3;">
     <span class="navbar-brand mb-0 h1 center">BINGO</span>
-  </nav><br>
-  <!--  making a grid having 5rows and 5 coloums  -->
+  </nav>
+ 
+  <p id="ins">Follow These Instructions For Better Experience</p>
+ 
+  <ul>
+    <li>You are going to submit the list of numbers(1-25) in place of those boxes. </li>
+    <li>Try not to enter same number multiple times.</li>
+    <li>each box should contain an unique number in range(1-25)</li>
+    <li>use reset to set values of your choice and click submit to start the game</li>
+
+  </ul>
   <div class="container">
     <!-- 1st row -->
     <div class="row">
@@ -33,14 +42,7 @@
       <div class="col-sm custom-col-sm">
         <input value=5 type="number"/>
       </div>
-      <div id="ins">
-        <p></p><p></p><p></p><p></p><p></p>
-        <p>Follow These Instructions For Better Experience</p>
-        
-   
-        
-        
-      </div>
+
     </div>
 
    <!-- 2nd row -->
@@ -61,11 +63,7 @@
         <input value=10 type="number"/>
       </div>
 
-      <ul>
-        <li>You are going to submit the list of numbers(1-25) in place of those boxes. </li>
-        <li>Try not to enter same number multiple times.</li>
-        <li>each box should contain an unique number in range(1-25)</li>
-      </ul>
+ 
     </div>
 
   <!-- 3rd row -->
@@ -86,8 +84,7 @@
         <input value=15 type="number"/>
       </div>
      
-      <button id="mybtn" onclick="userChoice()">Submit</button>
-    <button id="mybtn" onclick="Reset()">Reset</button>
+    
 
 
     </div>
@@ -132,7 +129,8 @@
       </div>
     </div>
 
-    
+    <button id="mybtn" onclick="userChoice()">Submit</button>
+    <button id="mybtn" onclick="Reset()">Reset</button>
   </div>
 
 

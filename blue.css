@@ -1,54 +1,40 @@
-.col-sm{
-
+.col-sm {
     color: aquamarine;
     background-color: rgb(203, 137, 214);
     border: 1px solid rgb(226, 200, 200);
     height: 100px;
-    
-
 }
 
-
-  .custom-col-sm {
+.custom-col-sm {
     flex: 0 0 auto;
-    width: 10%; 
-    
-    
-  }
-
-
-.container{
-    margin-right: auto;
-    margin-left: auto;
+    width: 10%;
 }
 
 .custom-col-sm input {
-    width: 100%; 
+    width: 100%;
     padding: 0;
     height: 100px;
-    margin: 0; 
+    margin: 0;
     border: none;
-    background: none; 
+    background: none;
     text-align: center;
     font-size: inherit;
-    outline: none; 
-    appearance: none; 
-    -moz-appearance: textfield; 
-  }
+    outline: none;
+    appearance: none;
+    -moz-appearance: textfield;
+}
 
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }
+}
 
-  
-  input[type=number] {
-    -moz-appearance: textfield; 
-  }
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
-  #mybtn{
+#mybtn {
     background-color: rgb(199, 84, 214);
     padding: 10px;
     border: 2px solid rgb(49, 2, 59);
@@ -57,16 +43,27 @@
     width: 7%;
     height: 10%;
     font-weight: bold;
+}
 
-  }
-
-#mybtn:hover{
+#mybtn:hover {
     background-color: rgb(216, 191, 218);
     color: black;
 }
 
-  #ins{
-    padding: 16px;
+#ins {
+    padding: 12px;
     font-weight: bold;
+}
 
-  }
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+    .col-sm {
+        width: 20%; /* Increase width of each column */
+    }
+
+    #mybtn {
+        width: 20%; /* Increase button width */
+        height: 50px; /* Increase button height */
+        font-size: 14px; /* Adjust font size for better visibility */
+    }
+}
