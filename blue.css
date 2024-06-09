@@ -23,6 +23,8 @@ h6{
  
 }
 
+
+
 .row{
     margin: auto;
 }
@@ -57,7 +59,7 @@ input[type=number] {
     border: 2px solid rgb(49, 2, 59);
     margin: 20px;
     color: aliceblue;
-    width: 30%; /* Adjust the width as needed */
+    width: 40%; /* Adjust the width as needed */
     height: 20%px; /* Adjust the height as needed */
     font-weight: bold;
 }
@@ -80,8 +82,32 @@ input[type=number] {
     }
 
     #mybtn {
-        width: 20%; /* Increase button width */
+        width: 30%; /* Increase button width */
         height: 50px; /* Increase button height */
-        font-size: 14px; /* Adjust font size for better visibility */
+        font-weight: bold; /* Adjust font size for better visibility */
+    }
+}
+
+#myImage {
+    max-width: 100%; /* Make sure the image does not exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is centered horizontally */
+    margin: auto; /* Center the image horizontally */
+}
+
+/* CSS for smaller screens */
+@media (max-width: 768px) {
+    #myImage {
+      display: none;
+      padding: 0;
+    }
+    h6{
+        display: none;
+    }
+       /* CSS for hiding the 4th row, 4th column on mobile screens */
+       @media (max-width: 768px) {
+        .col-sm:nth-child(4) {
+            display: none;
+        }
     }
 }
