@@ -14,17 +14,29 @@
   <nav class="navbar navbar-light" style="background-color: #e3a8f3;">
     <span class="navbar-brand mb-0 h1 center">BINGO</span>
   </nav>
- 
-  <p id="ins">Follow These Instructions For Better Experience</p>
- 
-  <ul>
-    <li>You are going to submit the list of numbers(1-25) in place of those boxes. </li>
-    <li>Try not to enter same number multiple times.</li>
-    <li>each box should contain an unique number in range(1-25)</li>
-    <li>use reset to set values of your choice and click submit to start the game</li>
 
-  </ul>
   <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p id="ins">Follow These Instructions For Better Experience</p>
+        <ul>
+          <li>You are going to submit the list of numbers(1-25) in place of those boxes. </li>
+          <li>Try not to enter the same number multiple times.</li>
+          <li>Each box should contain a unique number in the range(1-25)</li>
+          <li>Use reset to set values of your choice and click submit to start the game</li>
+        </ul>
+      </div>
+      <div class="col">
+        <button id="mybtn" onclick="userChoice()">Submit</button>
+        <button id="mybtn" onclick="Reset()">Reset</button>
+        
+      </div>
+      
+        
+    
+    </div>
+ 
+<br>
     <!-- 1st row -->
     <div class="row">
       <div class="col-sm custom-col-sm">
@@ -43,7 +55,9 @@
         <input value=5 type="number"/>
       </div>
 
+     
     </div>
+    
 
    <!-- 2nd row -->
     <div class="row">
@@ -83,7 +97,10 @@
       <div class="col-sm custom-col-sm">
         <input value=15 type="number"/>
       </div>
-     
+      <div class="col-sm">
+        <h6>Let's Play Bingo!</h6>
+        <img src="https://media.tenor.com/QAIGME2QHqkAAAAj/capoo-gaming.gif"/>
+    </div>
     
 
 
@@ -129,8 +146,7 @@
       </div>
     </div>
 
-    <button id="mybtn" onclick="userChoice()">Submit</button>
-    <button id="mybtn" onclick="Reset()">Reset</button>
+   
   </div>
 
 

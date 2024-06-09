@@ -1,13 +1,30 @@
 .col-sm {
     color: aquamarine;
-    background-color: rgb(203, 137, 214);
-    border: 1px solid rgb(226, 200, 200);
+    
     height: 100px;
 }
 
 .custom-col-sm {
     flex: 0 0 auto;
     width: 10%;
+    background-color: rgb(203, 137, 214);
+    border: 1px solid rgb(226, 200, 200);
+}
+h6{
+    color: black;
+    font-family: cursive;
+    margin: 5%;
+    font-weight: bold;
+}
+.container {
+    background-color: #f2f2f2;
+    margin: auto; 
+    width: 80%;
+ 
+}
+
+.row{
+    margin: auto;
 }
 
 .custom-col-sm input {
@@ -40,8 +57,8 @@ input[type=number] {
     border: 2px solid rgb(49, 2, 59);
     margin: 20px;
     color: aliceblue;
-    width: 7%;
-    height: 10%;
+    width: 30%; /* Adjust the width as needed */
+    height: 20%px; /* Adjust the height as needed */
     font-weight: bold;
 }
 
@@ -49,6 +66,7 @@ input[type=number] {
     background-color: rgb(216, 191, 218);
     color: black;
 }
+
 
 #ins {
     padding: 12px;
