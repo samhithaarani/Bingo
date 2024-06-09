@@ -17,9 +17,16 @@ h6{
     font-weight: bold;
 }
 .container {
-    background-color: #f2f2f2;
+    
     margin: auto; 
     width: 80%;
+    background-image: url("https://i.pinimg.com/564x/43/82/79/438279897ed9b46af890faadf2e514b1.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+
+    background-size: cover;
+    
  
 }
 
@@ -55,6 +62,7 @@ input[type=number] {
 
 #mybtn {
     background-color: rgb(199, 84, 214);
+
     padding: 10px;
     border: 2px solid rgb(49, 2, 59);
     margin: 20px;
