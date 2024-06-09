@@ -54,6 +54,19 @@
     border: 2px solid rgb(49, 2, 59);
     margin: 20px;
     color: aliceblue;
+    width: 7%;
+    height: 10%;
+    font-weight: bold;
+
+  }
+
+#mybtn:hover{
+    background-color: rgb(216, 191, 218);
+    color: black;
+}
+
+  #ins{
+    padding: 16px;
     font-weight: bold;
 
   }

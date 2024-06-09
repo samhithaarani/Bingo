@@ -50,3 +50,26 @@ document.addEventListener('keydown', function(event) {
 
     console.log(inputValues);
   }
+
+
+
+
+  let inputsdup; 
+
+document.addEventListener('DOMContentLoaded', function() {
+  let inputs = document.querySelectorAll('input[type="number"]');
+  inputsdup = Array.from(inputs).map(input => input.value); // Initialize inputsdup inside
+});
+
+function Reset() {
+  let inputs = document.querySelectorAll('input[type="number"]');
+  inputs.forEach((input, index) => {
+    if (input.value === '') {
+      input.value = inputsdup[index]; 
+    } else {
+      console.log(`Setting input ${index} to empty value`);
+      inputsdup[index] = input.value; 
+      input.value = ''; 
+    }
+  });
+}
