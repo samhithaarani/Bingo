@@ -4,7 +4,7 @@
     background-color: rgb(203, 137, 214);
     border: 1px solid rgb(226, 200, 200);
     height: 100px;
-    width: 10%;
+    
 
 }
 
@@ -22,3 +22,38 @@
     margin-left: auto;
 }
 
+.custom-col-sm input {
+    width: 100%; 
+    padding: 0;
+    height: 100px;
+    margin: 0; 
+    border: none;
+    background: none; 
+    text-align: center;
+    font-size: inherit;
+    outline: none; 
+    appearance: none; 
+    -moz-appearance: textfield; 
+  }
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  
+  input[type=number] {
+    -moz-appearance: textfield; 
+  }
+
+  #mybtn{
+    background-color: rgb(199, 84, 214);
+    padding: 10px;
+    border: 2px solid rgb(49, 2, 59);
+    margin: 20px;
+    color: aliceblue;
+    font-weight: bold;
+
+  }
