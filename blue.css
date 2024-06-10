@@ -73,7 +73,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-#mybtn {
+.mybtn {
     background-color: rgb(199, 84, 214);
 
     padding: 10px;

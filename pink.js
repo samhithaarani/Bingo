@@ -45,12 +45,12 @@ document.addEventListener('keydown', function(event) {
     }
   });
 
+  const inputs = document.querySelectorAll('input[type="number"]');
+  const inputValues = [];
 
 
   function userChoice() {
-    const inputs = document.querySelectorAll('input[type="number"]');
-    const inputValues = [];
-
+   
     inputs.forEach(input => {
       inputValues.push(input.value);
     });
@@ -70,13 +70,14 @@ document.addEventListener('keydown', function(event) {
       Array.from(Coustcol).forEach(mybox => {
         mybox.style.backgroundColor = "white";
         Insel.style.display = "none"
+        Array.from(myBtn).forEach(btn=>{
+          btn.style.display ="none"
+        })
         Insgel.textContent = "Game Started! Now! computer will give you a number and also u need to clcik on the number you want to select after that!"
         Insgel.style.color = "blue"
         Array.from(Liel).forEach(
           li =>{
             li.style.display="none"
-            Cchoice.textContent = "Computer choice : "+2
-            Uchoice.textContent = "User choice :" + 3
 
             
           }
@@ -84,14 +85,26 @@ document.addEventListener('keydown', function(event) {
         
       })
       
-
+    Cchoice.textContent = "My Choice: " + getRandom();
       
-      inputs[i].onclick = play
+      
+      inputs[i].onclick = ()=> {
+        let userChoice = userInput (i);
+        Uchoice.textContent = "User Choice " + userChoice
+        console.log("User clicked: ", userChoice);
+
+
+      }
     }
   }
 
-function play() {
-  console.log("Hello");
+
+function getRandom(){
+  random_number = Math.floor(Math.random()*25)+1;
+  return random_number;
+}
+function userInput(num) {
+  return(inputValues[num]);
 }
 
 
