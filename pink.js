@@ -84,19 +84,37 @@ document.addEventListener('keydown', function(event) {
         )
         
       })
-      
-    Cchoice.textContent = "My Choice: " + getRandom();
-      
-      
-      inputs[i].onclick = ()=> {
-        let userChoice = userInput (i);
-        Uchoice.textContent = "User Choice " + userChoice
-        console.log("User clicked: ", userChoice);
-
-
-      }
+          HandleTurn()
     }
   }
+
+function HandleTurn()
+{
+
+
+for (let i=0 ; i<inputs.length ;i++){
+
+  compChoice=false;
+      
+ if(compChoice==false)  {  
+  inputs[i].onclick = ()=> {
+    let userChoice = userInput (i);
+    Uchoice.textContent = "User Choice " + userChoice
+    inputs[i].disabled=true
+    let myran = getRandom()
+    console.log(inputValues.findIndex[myran])
+    let myranIndex = inputValues.findIndex(value => parseInt(value) === myran);
+    inputs[myranIndex].disabled=true
+    Cchoice.textContent = "My Choice " + myran;
+
+
+
+  }
+}
+
+  }
+}
+
 
 
 function getRandom(){
